@@ -118,7 +118,28 @@ $monTableau = [
            "ville" => "Fourmies",
            "passions" => "Passions: JV, Informatique, la vie"
         ]
-];
+]
 
-//print_r($monTableau);
+?>
 
+<ul>
+
+    <?php
+
+    foreach ($monTableau as $toto){
+
+        foreach ($toto as $key2 => $value2) {
+
+            ?>
+
+        <li><?=$key2.  " : "  .$value2."<br><br>";?></li>
+
+    <?php
+
+        }
+    }
+
+    ?>
+
+
+</ul>
